@@ -1,6 +1,4 @@
-alert(111)
 $(document).ready(function(){
-alert(222)
 /* 拖动 */
 $('.player').drag({});
 function game(bulletTime,bulletSpeed,enemyTime,enemySpeed,score,maxWidth,minWidth,maxLife,minLife,playerLife,enemyHit,playerBomb){
