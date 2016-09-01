@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="keywords" content=""/>
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/game.css" />
+</head>
+
+<body>
+<div class="start">
+	<img src="images/start.jpg" />
+</div>
+<div class="bg">
+	<img src="images/bg1.jpg" />
+	<img src="images/bg1.jpg" />
+	<img src="images/bg1.jpg" />
+</div>
+<div class="player"></div>
+<ul class="btn">
+	<li>再来一次</li>
+	<li>状态强化</li>
+</ul>
+<div class="kill">本轮积分：0</div>
+<div class="amount">总积分：<span>0</span></div>
+<div class="level">LEVEL 1</div>
+<div class="life">剩余生命：0</div>
+<div class="bomb">炸弹：3</div>
+<ul class="statue">
+	<li>作弊开启！</li>
+	<li>高速射击！</li>
+	<li>分数加倍！</li>
+	<li>敌军减速！</li>
+	<li>生命+10！</li>
+	<li>生命+50！</li>
+	<li>我方无敌！</li>
+	<li>获得炸弹！</li>
+</ul>
+<ul class="difficulty">
+	<li data-bulletTime="200" data-bulletSpeed="500" data-enemyTime="300" data-enemySpeed="30" data-score="1" data-minWidth="90" data-maxWidth="120" data-minLife="1" data-maxLife="1" data-playerLife="80" data-enemyHit="0" data-playerBomb="5">简单</li>
+	<li data-bulletTime="200" data-bulletSpeed="500" data-enemyTime="250" data-enemySpeed="30" data-score="2" data-minWidth="80" data-maxWidth="120" data-minLife="1" data-maxLife="2" data-playerLife="60" data-enemyHit="1" data-playerBomb="3">普通</li>
+	<li data-bulletTime="200" data-bulletSpeed="500" data-enemyTime="200" data-enemySpeed="30" data-score="5" data-minWidth="60" data-maxWidth="120" data-minLife="2" data-maxLife="3" data-playerLife="50" data-enemyHit="2" data-playerBomb="1">困难</li>
+</ul>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/drag.js"></script>
+<script src="js/game.js"></script>
+</html>
