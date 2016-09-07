@@ -413,7 +413,7 @@ $('.start').click(function(){
 });
 $('.btn').find('li').eq(0).click(function(){
 	$('.btn').fadeOut(0);
-	$('.difficulty').fadeOut(0);
+	$('.difficulty').fadeIn(0);
 });
 /* 作弊 */
 var cheatCode = 0;
