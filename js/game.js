@@ -1,6 +1,10 @@
 $(document).ready(function(){
 /* 拖动 */
 $('.player').drag({});
+/* 浏览器 */
+document.ontouchmove = function(event){
+	event.preventDefault();
+}
 function game(bulletTime,bulletSpeed,enemyTime,enemySpeed,score,maxWidth,minWidth,maxLife,minLife,playerLife,enemyHit,playerBomb){
 	/* 初始化 */
 	var _bulletTime = bulletTime;
@@ -388,8 +392,8 @@ function game(bulletTime,bulletSpeed,enemyTime,enemySpeed,score,maxWidth,minWidt
 	});
 }
 /* 启动器 */
-var bulletTime,bulletSpeed,enemyTime,enemySpeed,score,maxWidth,minWidth,maxLife,minLife,playerLife,enemyHit,playerBomb;
 $('.difficulty').find('li').click(function(){
+	var bulletTime,bulletSpeed,enemyTime,enemySpeed,score,maxWidth,minWidth,maxLife,minLife,playerLife,enemyHit,playerBomb;
 	$('.amount').fadeOut(0);
 	bulletTime = parseInt($(this).attr('data-bulletTime'));
 	bulletSpeed = parseInt($(this).attr('data-bulletSpeed'));
@@ -416,12 +420,12 @@ $('.btn').find('li').eq(0).click(function(){
 	$('.difficulty').fadeIn(0);
 });
 /* 作弊 */
-var cheatCode = 0;
 function cheater(){
+	var cheatCode = 0;
 	$('.kill').click(function(){
 		cheatCode++;
 		if(cheatCode%5 == 0){
-			var name=prompt("请输入您的名字","");
+			var name = prompt("请输入您的名字","");
 			if(name == 'cheaters'){
 				$('.player').addClass('cheater');
 				$('.statue').find('li').eq(0).fadeIn(0);
@@ -438,7 +442,3 @@ function cheater(){
 }
 cheater();
 });
-/* 浏览器 */
-document.ontouchmove = function(event){
-	event.preventDefault();
-}

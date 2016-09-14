@@ -5,6 +5,7 @@
 .player{width:110px; height:71px; top:0; left:0; position:absolute; background:url(../images/player1.png) 0 0 no-repeat; z-index:100; display:none;}
 .player.end{background:url(../images/end.png) 0 0 no-repeat;}
 .player.cheater{background:url(../images/player2.png) 0 0 no-repeat;}
+.player.shield{background:url(../images/player3.png) 0 0 no-repeat;}
 .bullet{width:50px; top:0; left:0; position:absolute; display:block;}
 .bullet img{width:100%;}
 .enemy{width:100px; height:100px; top:0; left:0; position:absolute; display:block;}
